@@ -168,8 +168,8 @@
         return fragments;
     };
 
-    var setCache = function(markup) {
-        cache[markup] = markup;
+    var setCache = function(markup, fn) {
+        cache[markup] = fn;
     };
 
     var getCache = function(markup) {
@@ -268,7 +268,7 @@
             exports = module.exports = Simplate;
         }
 
-        exports.Simplate = Simplate;
+        root.Simplate = exports.Simplate = Simplate;
     } else {
         // Browser (use AMD if avail)
         if (typeof define === 'function' && define.amd) {
