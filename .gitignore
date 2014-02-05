@@ -1,7 +1,4 @@
-*~
-#ignore thumbnails created by windows
-Thumbs.db
-#Ignore files build by Visual Studio
+# visual studio
 *.obj
 *.exe
 *.pdb
@@ -9,6 +6,7 @@ Thumbs.db
 *.aps
 *.pch
 *.vspscc
+*.vssscc
 *_i.c
 *_p.c
 *.ncb
@@ -19,13 +17,39 @@ Thumbs.db
 *.cache
 *.ilk
 *.log
-[Bb]in
-[Db]ebug*/
 *.lib
 *.sbr
+*.sdf
+ipch/
 obj/
+[Bb]in
+[Dd]ebug*/
 [Rr]elease*/
-_ReSharper*/
-[Tt]est[Rr]esult*
 
+# tooling
+_ReSharper*/
+*.resharper.user
+[Tt]est[Rr]esult*
 .idea/
+
+# os junk files
+Thumbs.db
+*.DS_Store
+
+# merge tool backups
+*.orig
+
+# build output
+deploy/
+
+# module development shells
+index-dev-*.html
+
+# vim temp files
+*.swp
+
+# nodejs
+node_modules
+.grunt/
+_SpecRunner.html
+report/junit.xml

@@ -1,0 +1,9 @@
+{
+    "devel": true,
+    "evil": true,
+    "globals": {
+        "module": false,
+        "exports": true,
+        "define": false
+    }
+}
